@@ -80,7 +80,7 @@ function getItemIdFromElement(item) {
 }
 
 function deleteItem(itemId) {
-    console.log('what is wrong?')
+    console.log('what is wrong?');
     const index = STORE.findIndex(item => item.id === itemId);
     STORE.splice(index, 1);
 }
@@ -89,7 +89,7 @@ function handleDeleteItemClicked() {
   // this function will be responsible for when users want to delete a shopping list
   // item
   console.log('`handleDeleteItemClicked` ran')
-  $('js-shopping-list').on('click', `.js-item-toggle`, event => {
+  $('js-shopping-list').on('click', `.js-item-delete`, event => {
       const itemId = getItemIdFromElement(event.currentTarget);
       deleteItem(itemId);
       renderShoppingList();
