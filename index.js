@@ -75,7 +75,7 @@ function handleItemCheckClicked() {
   });
 }
 
-function getItemIdFromElement() {
+function getItemIdFromElement(item) {
     return $(item).closest('li').data('item-id');
 }
 
