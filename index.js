@@ -80,6 +80,7 @@ function getItemIdFromElement(item) {
 }
 
 function deleteItem(itemId) {
+    console.log('what is wrong?')
     const index = STORE.findIndex(item => item.id === itemId);
     STORE.splice(index, 1);
 }
